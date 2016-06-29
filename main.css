@@ -1,0 +1,9 @@
+.enabled {
+    color: white;
+    background-color: green;
+}
+
+.disabled {
+    color: white;
+    background-color: red;
+}

@@ -14,12 +14,6 @@ myApp.controller('MyController', function ($scope) {
 
 
 
-
-
-
-
-
-
         
         , {
             name: "Jim"
@@ -30,21 +24,11 @@ myApp.controller('MyController', function ($scope) {
 
 
 
-
-
-
-
-
         
         , {
             name: "Maria"
             , age: 15
     }
-
-
-
-
-
 
 
 
@@ -65,6 +49,13 @@ myApp.controller('MyController', function ($scope) {
             , age: $scope.age
         };
         $scope.people.push(person);
+    };
+    $scope.buttonClass = function () {
+        if ($scope.isFilled()) {
+            return "enabled";
+        } else {
+            return "disabled";
+        }
     };
 
 
