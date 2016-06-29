@@ -15,7 +15,16 @@
 
     <h1> Ángular Test</h1>
 
+    <input ng-model="name" placeholder="Name">
+    <input ng-model="age" placeholder="Age">
+    <button ng-click="addPerson">Add</button>
+
     <p>{{message}}</p>
+    <ul>
+        <li ng-repeat="person in people">
+            {{person.name}} : {{person.age}}
+        </li>
+    </ul>
 
 
 </body>
