@@ -17,7 +17,7 @@
 
     <input ng-model="name" placeholder="Name">
     <input ng-model="age" placeholder="Age">
-    <button ng-click="addPerson">Add</button>
+    <button ng-show="isFilled()" ng-click="addPerson()">Add</button>
 
     <p>{{message}}</p>
     <ul>
