@@ -12,9 +12,9 @@
 
 </head>
 
-<body ng-controller="MyController">
+<body ng-controller="SpotifyController">
 
-    <h1> Ángular Test</h1>
+    <h1> Spotify Test</h1>
 
     <input ng-model="name" placeholder="Name">
     <input ng-model="age" placeholder="Age">
@@ -26,6 +26,9 @@
             {{person.name}} : {{person.age}}
         </li>
     </ul>
+
+    <input ng-model="artist" placeholder="Artist">
+    <button ng-click="searc()">Search</button>
 
 
 </body>
